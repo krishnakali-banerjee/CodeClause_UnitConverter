@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>UniConvert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+    <div class="outer_container">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="">UNICONVERT</a>
+            </div>
+            <div class="toggle">
+                <a href="#">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#container" class="type">Home</a></li>
+                <li><a href="#" class="type">About</a></li>
+                <li><a href="#" class="type">Terms & Policies</a></li>
+                <li><a href="#footer" class="type">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="p1">Convert your</p>
+        <p class="p2">units easily</p>
+        <p class="p3">Quick, free, easy to use, online unit converter that converts common units of measurements.</p>
+        <div class="container">
+            <p>Choose your option</p>
+            <select class="optionType" id="select1" onchange="convert(this.id,'inputType','resultType')">
+                <option value="">--Choose your option--</option>
+                <option value="length">Length</option>
+                <option value="temperature">Temperature</option>
+                <option value="area">Area</option>
+                <option value="volume">Volume</option>
+                <option value="weight">Weight</option>
+                <option value="time">Time</option>
+            </select>
+            <div class="first">
+                <div class="content1">
+                    <input type="number" placeholder="input" class="input" id="input">
+                    <select class="inputType" id="inputType">
+                    </select>
+                </div>
+                <p> = </p>
+                <div class="content2">
+                    <input type="text" placeholder="result" class="result" id="result">
+                    <select class="resultType" id="resultType">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_content">
+                <p>Follow Us</p>
+            </div>
+            <ul class="footer_logo">
+                <li><a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="footer_copyright">
+                <p>Copyright @ 2023 KKB Coding. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
